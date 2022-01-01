@@ -23,7 +23,12 @@ git clone git@github.com:stoversa/NYT-Mongo-Scraper.git
 ```
 npm i
 ```
-4. Run the application from the command line:
+4. Open a different command prompt and start mongoDB on port 27017:
+```
+mongod
+```
+
+5. Run the application from the command line:
 ```
 node server.js
 ```
