@@ -6,10 +6,15 @@ const cheerio = require("cheerio");
  
 // A GET route for scraping the NYT website
 router.get("/scrape", (req, res) => {
-    console.log("scrape ran")
+    console.log("scrape about to run")
+    // console.log(req)
+    // console.log(res)
     // First, we grab the body of the html with request
     request("https://www.nytimes.com/", (error, response, body) => {
         if (!error && response.statusCode === 200) {
+            // console.log(error)
+            // console.log(response)
+            // console.log(body)
             // Then, we load that into cheerio and save it to $ for a shorthand selector
             const $ = cheerio.load(body);
             let count = 0;

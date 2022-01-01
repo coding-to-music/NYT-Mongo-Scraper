@@ -28,7 +28,12 @@ npm i
 mongod
 ```
 
-5. Run the application from the command line:
+5. Open ports 8080 and 27017:
+```
+Open ports 8080 and 27017
+```
+
+6. Run the application from the command line:
 ```
 node server.js
 ```
